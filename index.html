@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Student Panel</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                    <i class="fa fa-pie-chart text-body logo" aria-hidden="true"></i>
+            </li>
+            <li>
+                <a href="#" class="font-weight-bold">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    Students
+                </a>
+            </li>
+            <li class="active">
+                <a href="#" class="font-weight-bold">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Lesson Plan
+                </a>
+            </li>
+            <li>
+                <a href="#" class="font-weight-bold">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="dropdown dropleft py-3 px-2">
+            <button type="button" class="btn btn-light dropdown-toggle text-secondary font-weight-bold" data-toggle="dropdown">
+              Videos
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Video 1</a>
+              <a class="dropdown-item" href="#">Video 2</a>
+              <a class="dropdown-item" href="#">Video 3</a>
+            </div>
+        </div>
+        <form>
+            <input class="user__url" type="text" placeholder="Insert URL here">
+            <p class="text-center mb-0 pt-3">or</p>
+            <div class="upload-btn-wrapper">
+                <button class="btn bg-white px-4 py-5 font-weight-bold">Upload</button>
+                <input type="file" name="myfile" />
+            </div>           
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
